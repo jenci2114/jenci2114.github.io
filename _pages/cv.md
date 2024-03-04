@@ -1,11 +1,12 @@
 ---
-layout: cv
-permalink: /cv/
+layout: page
 title: cv
+permalink: /cv/
+description:
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 4
 ---
+
+<a href="/assets/pdf/zixin_wei_resume.pdf" target="_blank">Here</a> you can find my cv
+
+<a href="/assets/pdf/zixin_wei_transcript.pdf" target="_blank">Here</a> you can find my academic history

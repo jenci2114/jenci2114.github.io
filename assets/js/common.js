@@ -50,4 +50,24 @@ $(document).ready(function () {
       });
     }
   });
+
+  // Click and zoom profile pic
+  $('.pfp').on('click', function() {
+    // Create overlay div if it doesn't exist
+    if ($('.image-overlay').length === 0) {
+      $('body').append('<div class="image-overlay"></div>');
+    }
+
+    // Create a copy of the clicked image with the 'enlarged-image' class
+    // var enlargedImg = $(this).clone().addClass('enlarged-image').removeClass('pfp');
+    var enlargedImg = $('<img>').attr('src', '/assets/img/shuai.png').addClass('enlarged-image');
+
+    // Append the copied image to the overlay and show it
+    $('.image-overlay').html(enlargedImg).fadeIn();
+
+    // Add click event on the overlay to close it
+    $('.image-overlay').click(function() {
+      $(this).fadeOut();
+    });
+  });
 });

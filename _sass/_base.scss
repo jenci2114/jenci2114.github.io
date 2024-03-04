@@ -640,7 +640,7 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: 250px;
+    width: 375px;
     margin-bottom: 10px;
   }
 
@@ -1117,4 +1117,34 @@ swiper-container {
   --swiper-navigation-color: var(--global-theme-color);
   --swiper-pagination-color: var(--global-theme-color);
   --swiper-pagination-bullet-inactive-color: var(--global-text-color);
+}
+
+.pfp:hover {
+  cursor: pointer;
+}
+
+/* The overlay that covers the website */
+.image-overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  z-index: 2; /* Sit on top */
+  cursor: pointer; /* Change the cursor to indicate it can be closed */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Style for the enlarged image */
+.enlarged-image {
+  max-width: 70%; /* Limit the size of the image */
+  max-height: 70%; /* Limit the height of the image */
+  margin: auto; /* Center the image */
+  display: block; /* Display block to apply margins */
+  object-fit: contain; /* Ensures that aspect ratio is maintained without cropping */
 }
